@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './footer.html',
   styleUrl: './footer.css',
 })
-export class FooterComponent {}
+export class FooterComponent {
+  protected tService = inject(TranslationService);
+}

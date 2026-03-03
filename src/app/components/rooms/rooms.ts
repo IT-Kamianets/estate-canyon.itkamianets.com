@@ -1,5 +1,6 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
 import { register } from 'swiper/element/bundle';
+import { TranslationService } from '../../services/translation.service';
 
 register();
 
@@ -11,4 +12,6 @@ register();
   templateUrl: './rooms.html',
   styleUrl: './rooms.css',
 })
-export class RoomsComponent {}
+export class RoomsComponent {
+  protected tService = inject(TranslationService);
+}

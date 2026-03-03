@@ -1,10 +1,17 @@
 <footer class="footer has-background-dark has-text-white">
   <div class="content has-text-centered">
     <p>
-      <strong class="has-text-white">Садиба "Каньйон"</strong> &copy; 2026. Всі права захищені.
+      <strong class="has-text-white">{{ tService.t('hero.title') }}</strong> &copy; 2026. {{ tService.t('footer.copy') }}
     </p>
     <p>
-      Кам'янець-Подільський, Україна
+      {{ tService.t('footer.city') }}
+    </p>
+    <hr style="background-color: #444; width: 50px; margin: 1.5rem auto;">
+    <p class="is-size-7">
+      <a href="https://github.com/IT-Kamianets/estate-canyon.itkamianets.com/" target="_blank" class="has-text-white mr-4">
+        <span class="icon is-medium"><i class="fab fa-github fa-lg"></i></span>
+      </a>
+      <span style="color: #bbb;">Designed by Anatoliy</span>
     </p>
   </div>
 </footer>

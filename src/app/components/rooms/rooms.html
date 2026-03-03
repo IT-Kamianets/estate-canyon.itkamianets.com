@@ -1,6 +1,6 @@
 <section class="section">
   <div class="container">
-    <h1 class="title has-text-centered mb-6" style="color: var(--main-yellow);">Наші номери</h1>
+    <h1 class="title has-text-centered mb-6" style="color: var(--main-yellow);">{{ tService.t('rooms.title') }}</h1>
 
     <div class="columns is-multiline">
       
@@ -8,26 +8,26 @@
       <div class="column is-4">
         <div class="card bg-black">
           <swiper-container loop="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="false">
-            <swiper-slide><img src="images/251235125.jpg" alt="Двомісний 1"></swiper-slide>
-            <swiper-slide><img src="images/251235120.jpg" alt="Двомісний 2"></swiper-slide>
-            <swiper-slide><img src="images/251235124.jpg" alt="Двомісний 3"></swiper-slide>
-            <swiper-slide><img src="images/251235130.jpg" alt="Двомісний 4"></swiper-slide>
+            <swiper-slide><img src="images/251235125.jpg" alt="Room 1"></swiper-slide>
+            <swiper-slide><img src="images/251235120.jpg" alt="Room 2"></swiper-slide>
+            <swiper-slide><img src="images/251235124.jpg" alt="Room 3"></swiper-slide>
+            <swiper-slide><img src="images/251235130.jpg" alt="Room 4"></swiper-slide>
           </swiper-container>
           <div class="card-content">
             <div class="is-flex is-justify-content-between is-align-items-center mb-2" style="gap: 15px;">
-              <p class="title is-4 mb-0" style="color: var(--main-yellow);">Двохмісний номер</p>
+              <p class="title is-4 mb-0" style="color: var(--main-yellow);">{{ tService.t('rooms.double') }}</p>
               <span class="tag is-warning">UAH 850</span>
             </div>
-            <p class="subtitle is-6 has-text-grey-light mb-4">16 м² | 1 двоспальне ліжко</p>
+            <p class="subtitle is-6 has-text-grey-light mb-4">16 {{ tService.t('rooms.details.size') }} | {{ tService.t('rooms.details.bed1') }}</p>
             <ul class="room-details-list mb-4">
-              <li><i class="fas fa-check"></i> Балкон</li>
-              <li><i class="fas fa-check"></i> Холодильник</li>
-              <li><i class="fas fa-check"></i> Чайник</li>
-              <li><i class="fas fa-check"></i> Телевізор</li>
-              <li><i class="fas fa-check"></i> Душ</li>
-              <li><i class="fas fa-check"></i> Рушники</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.balcony') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.fridge') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.kettle') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.tv') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.shower') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.towels') }}</li>
             </ul>
-            <a class="button is-warning is-fullwidth has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">ЗАМОВИТИ</a>
+            <a class="button is-warning is-fullwidth has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">{{ tService.t('nav.book') }}</a>
           </div>
         </div>
       </div>
@@ -36,26 +36,26 @@
       <div class="column is-4">
         <div class="card bg-black">
           <swiper-container loop="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="false">
-            <swiper-slide><img src="images/299814917.jpg" alt="Класичний 1"></swiper-slide>
-            <swiper-slide><img src="images/299814913.jpg" alt="Класичний 2"></swiper-slide>
-            <swiper-slide><img src="images/299814914.jpg" alt="Класичний 3"></swiper-slide>
-            <swiper-slide><img src="images/299814906.jpg" alt="Класичний 4"></swiper-slide>
+            <swiper-slide><img src="images/299814917.jpg" alt="Room 1"></swiper-slide>
+            <swiper-slide><img src="images/299814913.jpg" alt="Room 2"></swiper-slide>
+            <swiper-slide><img src="images/299814914.jpg" alt="Room 3"></swiper-slide>
+            <swiper-slide><img src="images/299814906.jpg" alt="Room 4"></swiper-slide>
           </swiper-container>
           <div class="card-content">
             <div class="is-flex is-justify-content-between is-align-items-center mb-2" style="gap: 15px;">
-              <p class="title is-4 mb-0" style="color: var(--main-yellow);">Класичний чотиримісний</p>
+              <p class="title is-4 mb-0" style="color: var(--main-yellow);">{{ tService.t('rooms.classic') }}</p>
               <span class="tag is-warning">UAH 1 240</span>
             </div>
-            <p class="subtitle is-6 has-text-grey-light mb-4">25 м² | 2 двоспальні ліжка</p>
+            <p class="subtitle is-6 has-text-grey-light mb-4">25 {{ tService.t('rooms.details.size') }} | {{ tService.t('rooms.details.beds2') }}</p>
             <ul class="room-details-list mb-4">
-              <li><i class="fas fa-check"></i> Вид на місто</li>
-              <li><i class="fas fa-check"></i> BBQ</li>
-              <li><i class="fas fa-check"></i> Гардероб</li>
-              <li><i class="fas fa-check"></i> Телевізор</li>
-              <li><i class="fas fa-check"></i> Ванна</li>
-              <li><i class="fas fa-check"></i> Рушники</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.city_view') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.bbq') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.wardrobe') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.tv') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.bath') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.towels') }}</li>
             </ul>
-            <a class="button is-warning is-fullwidth has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">ЗАМОВИТИ</a>
+            <a class="button is-warning is-fullwidth has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">{{ tService.t('nav.book') }}</a>
           </div>
         </div>
       </div>
@@ -64,26 +64,26 @@
       <div class="column is-4">
         <div class="card bg-black">
           <swiper-container loop="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="false">
-            <swiper-slide><img src="images/251540380.jpg" alt="Стандартний 1"></swiper-slide>
-            <swiper-slide><img src="images/251539925.jpg" alt="Стандартний 2"></swiper-slide>
-            <swiper-slide><img src="images/327669055.jpg" alt="Стандартний 3"></swiper-slide>
-            <swiper-slide><img src="images/327669058.jpg" alt="Стандартний 4"></swiper-slide>
+            <swiper-slide><img src="images/251540380.jpg" alt="Room 1"></swiper-slide>
+            <swiper-slide><img src="images/251539925.jpg" alt="Room 2"></swiper-slide>
+            <swiper-slide><img src="images/327669055.jpg" alt="Room 3"></swiper-slide>
+            <swiper-slide><img src="images/327669058.jpg" alt="Room 4"></swiper-slide>
           </swiper-container>
           <div class="card-content">
             <div class="is-flex is-justify-content-between is-align-items-center mb-2" style="gap: 15px;">
-              <p class="title is-4 mb-0" style="color: var(--main-yellow);">Стандартний чотиримісний</p>
+              <p class="title is-4 mb-0" style="color: var(--main-yellow);">{{ tService.t('rooms.standard') }}</p>
               <span class="tag is-warning">UAH 1 440</span>
             </div>
-            <p class="subtitle is-6 has-text-grey-light mb-4">25 м² | 2 одинарні + 1 двоспальне</p>
+            <p class="subtitle is-6 has-text-grey-light mb-4">25 {{ tService.t('rooms.details.size') }} | {{ tService.t('rooms.details.beds3') }}</p>
             <ul class="room-details-list mb-4">
-              <li><i class="fas fa-check"></i> Балкон</li>
-              <li><i class="fas fa-check"></i> Вид на місто</li>
-              <li><i class="fas fa-check"></i> Праска</li>
-              <li><i class="fas fa-check"></i> Косметика</li>
-              <li><i class="fas fa-check"></i> Холодильник</li>
-              <li><i class="fas fa-check"></i> Душ</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.balcony') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.city_view') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.iron') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.cosmetics') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.fridge') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.shower') }}</li>
             </ul>
-            <a class="button is-warning is-fullwidth has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">ЗАМОВИТИ</a>
+            <a class="button is-warning is-fullwidth has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">{{ tService.t('nav.book') }}</a>
           </div>
         </div>
       </div>
@@ -92,26 +92,26 @@
       <div class="column is-4">
         <div class="card bg-black">
           <swiper-container loop="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="false">
-            <swiper-slide><img src="images/299813951.jpg" alt="З балконом 1"></swiper-slide>
-            <swiper-slide><img src="images/299813933.jpg" alt="З балконом 2"></swiper-slide>
-            <swiper-slide><img src="images/327669057.jpg" alt="З балконом 3"></swiper-slide>
-            <swiper-slide><img src="images/327669056.jpg" alt="З балконом 4"></swiper-slide>
+            <swiper-slide><img src="images/299813951.jpg" alt="Room 1"></swiper-slide>
+            <swiper-slide><img src="images/299813933.jpg" alt="Room 2"></swiper-slide>
+            <swiper-slide><img src="images/327669057.jpg" alt="Room 3"></swiper-slide>
+            <swiper-slide><img src="images/327669056.jpg" alt="Room 4"></swiper-slide>
           </swiper-container>
           <div class="card-content">
             <div class="is-flex is-justify-content-between is-align-items-center mb-2" style="gap: 15px;">
-              <p class="title is-4 mb-0" style="color: var(--main-yellow);">Чотиримісний з балконом</p>
+              <p class="title is-4 mb-0" style="color: var(--main-yellow);">{{ tService.t('rooms.balcony') }}</p>
               <span class="tag is-warning">UAH 1 500</span>
             </div>
-            <p class="subtitle is-6 has-text-grey-light mb-4">30 м² | 2 одинарні + 1 двоспальне</p>
+            <p class="subtitle is-6 has-text-grey-light mb-4">30 {{ tService.t('rooms.details.size') }} | {{ tService.t('rooms.details.beds3') }}</p>
             <ul class="room-details-list mb-4">
-              <li><i class="fas fa-check"></i> Великий балкон</li>
-              <li><i class="fas fa-check"></i> Вид на каньйон</li>
-              <li><i class="fas fa-check"></i> Супутникове ТБ</li>
-              <li><i class="fas fa-check"></i> Москітна сітка</li>
-              <li><i class="fas fa-check"></i> Чайник</li>
-              <li><i class="fas fa-check"></i> Опалення</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.big_balcony') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.canyon_view') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.sat_tv') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.mosquito') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.kettle') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.heating') }}</li>
             </ul>
-            <a class="button is-warning is-fullwidth has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">ЗАМОВИТИ</a>
+            <a class="button is-warning is-fullwidth has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">{{ tService.t('nav.book') }}</a>
           </div>
         </div>
       </div>
@@ -120,26 +120,26 @@
       <div class="column is-4">
         <div class="card bg-black">
           <swiper-container loop="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="false">
-            <swiper-slide><img src="images/251235138.jpg" alt="Загальний 1"></swiper-slide>
-            <swiper-slide><img src="images/251235135.jpg" alt="Загальний 2"></swiper-slide>
-            <swiper-slide><img src="images/251235131.jpg" alt="Загальний 3"></swiper-slide>
-            <swiper-slide><img src="images/251235125.jpg" alt="Загальний 4"></swiper-slide>
+            <swiper-slide><img src="images/251235138.jpg" alt="Room 1"></swiper-slide>
+            <swiper-slide><img src="images/251235135.jpg" alt="Room 2"></swiper-slide>
+            <swiper-slide><img src="images/251235131.jpg" alt="Room 3"></swiper-slide>
+            <swiper-slide><img src="images/251235125.jpg" alt="Room 4"></swiper-slide>
           </swiper-container>
           <div class="card-content">
             <div class="is-flex is-justify-content-between is-align-items-center mb-2" style="gap: 15px;">
-              <p class="title is-4 mb-0" style="color: var(--main-yellow);">Десятимісний загальний</p>
+              <p class="title is-4 mb-0" style="color: var(--main-yellow);">{{ tService.t('rooms.dorm') }}</p>
               <span class="tag is-warning">UAH 3 000</span>
             </div>
-            <p class="subtitle is-6 has-text-grey-light mb-4">70 м² | 2 одинарні + 4 двоспальні</p>
+            <p class="subtitle is-6 has-text-grey-light mb-4">70 {{ tService.t('rooms.details.size') }} | {{ tService.t('rooms.details.beds4') }}</p>
             <ul class="room-details-list mb-4">
-              <li><i class="fas fa-check"></i> Вид на місто</li>
-              <li><i class="fas fa-check"></i> Барбекю</li>
-              <li><i class="fas fa-check"></i> Тераса</li>
-              <li><i class="fas fa-check"></i> Шафа</li>
-              <li><i class="fas fa-check"></i> Ванна</li>
-              <li><i class="fas fa-check"></i> Рушники</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.city_view') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.bbq') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.terrace') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.wardrobe') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.bath') }}</li>
+              <li><i class="fas fa-check"></i> {{ tService.t('rooms.features.towels') }}</li>
             </ul>
-            <a class="button is-warning is-fullwidth has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">ЗАМОВИТИ</a>
+            <a class="button is-warning is-fullwidth has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">{{ tService.t('nav.book') }}</a>
           </div>
         </div>
       </div>

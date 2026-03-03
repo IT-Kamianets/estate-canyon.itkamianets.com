@@ -1,9 +1,9 @@
 <section class="hero is-medium" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/327669055.jpg') center/cover;">
   <div class="hero-body has-text-centered">
     <div class="container">
-      <h1 class="title is-1" style="color: var(--main-yellow);">Садиба "Каньйон"</h1>
-      <h2 class="subtitle is-3 has-text-white">Ваш затишний куточок у Кам'янці-Подільському</h2>
-      <a class="button is-warning is-large mt-4" routerLink="/rooms">Обрати номер</a>
+      <h1 class="title is-1" style="color: var(--main-yellow);">{{ tService.t('hero.title') }}</h1>
+      <h2 class="subtitle is-3 has-text-white">{{ tService.t('hero.subtitle') }}</h2>
+      <a class="button is-warning is-large mt-4" routerLink="/rooms">{{ tService.t('hero.cta') }}</a>
     </div>
   </div>
 </section>
@@ -12,19 +12,19 @@
   <div class="container">
     <div class="columns is-vcentered">
       <div class="column is-6">
-        <h3 class="title is-3" style="color: var(--main-yellow);">Відпочинок з видом на історію</h3>
+        <h3 class="title is-3" style="color: var(--main-yellow);">{{ tService.t('home.about.title') }}</h3>
         <div class="content is-medium">
           <p>
-            Садиба «Каньйон» розташована в самому серці історичного міста, лише за 15 хвилин неспішної прогулянки від легендарної Старої Фортеці.
+            {{ tService.t('home.about.p1') }}
           </p>
           <p>
-            Ми пропонуємо нашим гостям комфортабельні номери, виконані в теплому дерев'яному стилі, безкоштовну приватну парковку та зону для барбекю.
+            {{ tService.t('home.about.p2') }}
           </p>
           <div class="tags are-medium mt-4">
+            <span class="tag is-light is-green-text">{{ tService.t('rooms.features.fridge') }}</span>
             <span class="tag is-light is-green-text">Wi-Fi</span>
-            <span class="tag is-light is-green-text">Парковка</span>
-            <span class="tag is-light is-green-text">Тераса</span>
-            <span class="tag is-light is-green-text">BBQ</span>
+            <span class="tag is-light is-green-text">{{ tService.t('rooms.features.terrace') }}</span>
+            <span class="tag is-light is-green-text">{{ tService.t('rooms.features.bbq') }}</span>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@
 
 <section class="section bg-black">
   <div class="container">
-    <h2 class="title has-text-centered mb-6" style="color: var(--main-yellow);">Галерея садиби</h2>
+    <h2 class="title has-text-centered mb-6" style="color: var(--main-yellow);">{{ tService.t('home.gallery.title') }}</h2>
     <div class="columns is-multiline">
       <!-- Галерея фото з папки images -->
       <div class="column is-4">

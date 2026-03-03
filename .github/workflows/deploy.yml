@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # або змініть на назву вашої основної гілки (наприклад, master)
+      - master  # або змініть на назву вашої основної гілки (наприклад, master)
 
 jobs:
   deploy:

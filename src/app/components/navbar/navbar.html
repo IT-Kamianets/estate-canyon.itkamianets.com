@@ -1,0 +1,56 @@
+<!-- Desktop Navbar -->
+<nav class="navbar is-primary is-hidden-touch" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" routerLink="/">
+        <strong class="is-size-4" style="color: var(--main-yellow);">Садиба "Каньйон"</strong>
+      </a>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+          Головна
+        </a>
+        <a class="navbar-item" routerLink="/rooms" routerLinkActive="is-active">
+          Номери
+        </a>
+        <a class="navbar-item" routerLink="/contact" routerLinkActive="is-active">
+          Контакти
+        </a>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-warning has-text-weight-bold" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">
+              ЗАМОВИТИ
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Bottom Navigation (Visible only on mobile/touch) -->
+<div class="mobile-nav is-hidden-desktop">
+  <a class="mobile-nav-item" routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+    <i class="fas fa-home"></i>
+    <span>Головна</span>
+  </a>
+  <a class="mobile-nav-item" routerLink="/rooms" routerLinkActive="is-active">
+    <i class="fas fa-bed"></i>
+    <span>Номери</span>
+  </a>
+  
+  <a class="mobile-nav-item call-button-mobile" href="tel:+380673842628">
+    <i class="fas fa-phone"></i>
+  </a>
+
+  <a class="mobile-nav-item" routerLink="/contact" routerLinkActive="is-active">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>Контакти</span>
+  </a>
+  <a class="mobile-nav-item" href="https://www.booking.com/hotel/ua/kan-ion.uk.html" target="_blank">
+    <i class="fas fa-calendar-check"></i>
+    <span>ЗАМОВИТИ</span>
+  </a>
+</div>

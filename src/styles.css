@@ -8,8 +8,8 @@
 
 body {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background-color: white;
-  color: var(--main-black);
+  background-color: var(--main-black);
+  color: white;
   padding-bottom: 70px;
 }
 
@@ -24,6 +24,20 @@ body {
 .navbar.is-primary {
   background-color: var(--main-black);
   border-bottom: 3px solid var(--main-yellow);
+}
+
+.navbar.is-primary .navbar-item {
+  color: white !important;
+}
+
+.navbar.is-primary .navbar-item:hover {
+  color: var(--main-yellow) !important;
+  background-color: transparent !important;
+}
+
+.navbar.is-primary .navbar-item.is-active {
+  color: var(--main-yellow) !important;
+  font-weight: bold;
 }
 
 .hero.is-primary {
